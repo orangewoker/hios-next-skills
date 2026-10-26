@@ -7591,6 +7591,96 @@
       "package": "packages/skill-bee7689487fb99bf-1.0.0.zip",
       "sha256": "71eb9afd67a4442668fd2a3e5dbdf344c2594d282d36448995b552573389aa83",
       "size": 3017
+    },
+    {
+      "id": "minimax-3d-animation-short-generator",
+      "name": "3D动画短片生成器",
+      "description": "根据故事创意，完成人物与场景设定、镜头规划、分镜生成和视频合成，输出风格统一的3D动画短片。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-3d-animation-short-generator-1.0.0.zip",
+      "sha256": "ff751e59dbd24fbd503572e4503071120d8db930b76c671039dd5c518be72f60",
+      "size": 45726
+    },
+    {
+      "id": "minimax-brand-promo-video-generator",
+      "name": "品牌宣传短片生成器",
+      "description": "基于品牌素材与推广目标，完成事实核验、创意方向、分镜和音画合成，输出可展示的品牌宣传短片。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "电商广告",
+      "version": "1.0.0",
+      "package": "packages/minimax-brand-promo-video-generator-1.0.0.zip",
+      "sha256": "457ba43d080ef6b6f9d48505958d619a07d39b2562344b057ae382182800ff99",
+      "size": 18970
+    },
+    {
+      "id": "minimax-co-op-game-intro-generator",
+      "name": "双人游戏开场视频生成器",
+      "description": "根据玩家信息、角色参考图和视觉风格，完成首图确认与界面动效设计，输出双人游戏开场视频。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-co-op-game-intro-generator-1.0.0.zip",
+      "sha256": "8fb642bb85658e3b4147c6f5c6740c99ee63215711a32fdda7118f197ecf1c83",
+      "size": 22425
+    },
+    {
+      "id": "minimax-h3-prompt-writing",
+      "name": "MiniMax H3 视频提示词编写",
+      "description": "编写 MiniMax H3 文生、图生、首尾帧及多模态参考视频提示词，组织画面、声音与音乐字段。",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-h3-prompt-writing-1.0.0.zip",
+      "sha256": "23cd99befe20d20f511d071be04ed9f7382aacb22b605a9177160aa8c89ffe10",
+      "size": 16867
+    },
+    {
+      "id": "minimax-handdrawn-live-video-generator",
+      "name": "手绘实拍融合视频生成器",
+      "description": "基于场景创意，生成手绘动画与实拍接触变形的15秒视频，适用于创意短片制作。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-handdrawn-live-video-generator-1.0.0.zip",
+      "sha256": "6579fd2d7b9aae5c48120262b45be9f5160e1c38e21086f4efb78ffc58a48eb0",
+      "size": 13443
+    },
+    {
+      "id": "minimax-minimalist-product-ad-generator",
+      "name": "极简产品广告生成器",
+      "description": "基于产品图片和广告需求，完成卖点提炼、英文文案与节拍分镜设计，输出极简产品广告短片，适用于电商推广与新品发布。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "电商广告",
+      "version": "1.0.0",
+      "package": "packages/minimax-minimalist-product-ad-generator-1.0.0.zip",
+      "sha256": "8a77bedcc49e75b1e26dd0b9fe0464582571892e739a5a6c2e358b6e0f2a2dc1",
+      "size": 35558
+    },
+    {
+      "id": "minimax-music-video-subtitle-generator",
+      "name": "音乐MV动态字幕生成器",
+      "description": "基于音乐和歌词，完成节奏拆解、镜头设计与动态字幕方案，适用于AI MV创作。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-music-video-subtitle-generator-1.0.0.zip",
+      "sha256": "a7d4f68ec76d971cbbf48b8dcc873ae794eca400e464b9e43a2780a4904f43f4",
+      "size": 20975
+    },
+    {
+      "id": "minimax-paper-collage-explainer-generator",
+      "name": "纸拼贴讲解动画生成器",
+      "description": "基于文案或抽象概念，完成隐喻设计、拼贴分镜和动画生成，适用于讲解类内容。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-paper-collage-explainer-generator-1.0.0.zip",
+      "sha256": "a4bff61d45adb8c03ec78f34a8042ca6d13b9f4515898736905d0d19de68591a",
+      "size": 24544
+    },
+    {
+      "id": "minimax-papercraft-stop-motion-explainer",
+      "name": "纸艺定格科普视频生成器",
+      "description": "根据知识主题，完成纸偶、分层布景、分镜与提示词设计，输出可执行的纸艺定格科普视频创作包。（生成成片需另有可用模型与工具；缺少时交付方案和提示词。）",
+      "category": "影视分镜",
+      "version": "1.0.0",
+      "package": "packages/minimax-papercraft-stop-motion-explainer-1.0.0.zip",
+      "sha256": "397d50ffd22d2a34b45a7adfdf9a069904d0e1c63a73fcb600b79b5cb3643389",
+      "size": 27907
     }
   ]
 }

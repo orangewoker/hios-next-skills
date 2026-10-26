@@ -1,0 +1,3 @@
+# Preserve imported source bytes and package/source equivalence across platforms.
+skills/minimax-*/** -text
+packages/*.zip -text
