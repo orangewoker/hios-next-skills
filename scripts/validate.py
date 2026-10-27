@@ -1,5 +1,6 @@
 """Validate every catalog entry, archive hash, metadata and source tree."""
 import hashlib,json,pathlib,re,zipfile
+from catalog_lib import manifest, publication_files, version_of
 root=pathlib.Path(__file__).resolve().parents[1]
 index=json.loads((root/'skills-index.json').read_text('utf-8')); seen=set()
 for e in index['skills']:
@@ -12,12 +13,16 @@ for e in index['skills']:
     with zipfile.ZipFile(path) as z:
         assert z.testzip() is None
         assert len(z.namelist())==len(set(z.namelist()))
-        assert set(z.namelist())=={p.relative_to(folder).as_posix() for p in folder.rglob('*') if p.is_file()}
+        assert set(z.namelist())=={p.relative_to(folder).as_posix() for p in publication_files(folder)},sid
         for n in z.namelist():
             p=pathlib.PurePosixPath(n);assert not p.is_absolute() and '..' not in p.parts and '\\' not in n and ':' not in n
-            assert z.read(n)==(folder/n).read_bytes(),(sid,n)
-        text=z.read('SKILL.md').decode('utf-8-sig').replace('\r\n','\n');meta=json.loads(re.match(r'^---\n(.*?)\n---',text,re.S)[1])
-        assert meta['name']==sid and meta['metadata']['version']==e['version']
+            packed,source=z.read(n),(folder/n).read_bytes()
+            if packed!=source:
+                # Older imported text was normalized by Git before byte-preserving
+                # attributes existed. Archive SHA-256 remains checked verbatim.
+                assert packed.decode('utf-8-sig').replace('\r\n','\n')==source.decode('utf-8-sig').replace('\r\n','\n'),(sid,n)
+        text=z.read('SKILL.md').decode('utf-8-sig').replace('\r\n','\n');meta=manifest(text)[0]
+        assert meta['name']==sid and version_of(meta)==e['version'],sid
         assert meta['description']==e['description']
         if sid.startswith('minimax-'):
             for f in folder.rglob('*'):

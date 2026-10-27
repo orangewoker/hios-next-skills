@@ -1,3 +1,4 @@
 # Preserve imported source bytes and package/source equivalence across platforms.
 skills/minimax-*/** -text
+skills/blender-furniture-spaces/** -text
 packages/*.zip -text

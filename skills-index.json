@@ -7681,6 +7681,16 @@
       "package": "packages/minimax-papercraft-stop-motion-explainer-1.0.0.zip",
       "sha256": "397d50ffd22d2a34b45a7adfdf9a069904d0e1c63a73fcb600b79b5cb3643389",
       "size": 27907
+    },
+    {
+      "id": "blender-furniture-spaces",
+      "name": "Blender 家具与空间",
+      "description": "在本地已打开的 Blender 中，根据文字、家具参考图、平面图或尺寸图创建和修改可编辑的家具与空间模型。适用于沙发软包、曲面家具、木作柜体、室内空间及其材质、灯光和多视角校验；在 DSH 中通过终端执行本技能附带的本地控制器，不依赖旧 HIOS Blender MCP。",
+      "category": "空间建筑",
+      "version": "1.0.0",
+      "package": "packages/blender-furniture-spaces-1.0.0.zip",
+      "sha256": "d3de26f6b94cc43dc91fc1ebb6634a03cae5e1637cd99782200236cb018d6f5c",
+      "size": 35862
     }
   ]
 }
